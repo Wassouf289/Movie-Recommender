@@ -20,7 +20,7 @@ class Movie_Recommender:
         HOST = 'localhost'
         PORT = '5432'
         DBNAME = 'movies_db'
-        connection_string = f'postgres://{HOST}:{PORT}/{DBNAME}'
+        connection_string = f'postgresql://{HOST}:{PORT}/{DBNAME}'
         db = create_engine(connection_string)
         movies_ratings = pd.read_sql_query("SELECT * FROM movies_ratings;", db)
         return movies_ratings
