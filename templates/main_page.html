@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="/recommender">
+  <h1 style=font-size:40px>Welcome to Movie recommender </h1> 
+  <br>
+  <br>
+  <br>
+  <h5> in order to recommend movies for you, please click "start rating" , 
+      choose five movies from your choice and rate them!
+  </h5>
+  <br>
+  <div class="start-rate-submit">
+    <button class="btn btn-primary btn-xl text-uppercase" type="submit" name="start rating"> start rating </button>
+  </div>
+  </form>
+  <br>
+<br>
+{% endblock %}
