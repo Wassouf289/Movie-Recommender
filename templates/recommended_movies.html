@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <h1>Our Recommender recommend these movies for you:</h1> <br>
+  <ul>
+    {% for movie in movies %}
+    <li font-size:30px> {{ movie }} </li>
+    {% endfor %}
+  </ul>
+  <br>
+  <br>
+  <div class="form-go-back-main">
+  <button onclick="location.href='/'" type="submit" class="btn btn-primary btn-xl">
+  main page
+</button>
+</div>
+  <br>
+  <br>
+
+
+{% endblock %}
