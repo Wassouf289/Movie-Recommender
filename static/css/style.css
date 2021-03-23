@@ -1,0 +1,238 @@
+/* @extend display-flex; */
+display-flex, .header, .form-group {
+  display: flex;
+  display: -webkit-flex; }
+
+/* @extend list-type-ulli; */
+list-type-ulli {
+  list-style-type: value;
+  margin: 0;
+  padding: 0;
+  font-size:15px
+
+   }
+
+
+ul li {
+  padding-left: 12px;
+  cursor: pointer;
+}
+
+li:nth-child(odd) {
+  color: #979390;
+}
+li:nth-child(even) {
+  color: rgb(73, 78, 73);
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+figure {
+  margin: 0; }
+
+p {
+  margin-bottom: 0px; }
+
+h1 {
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: rgb(5, 10, 82);
+  font-family: Poppins;
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 28px; }
+
+  h5 {
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: rgb(112, 98, 98);
+    font-family: Poppins;
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 28px; }
+  
+.clear {
+  clear: both; }
+
+body {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #fff;
+  background-image: url("../images/container.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-position: center center;
+  font-weight: 600;
+  font-family: Poppins;
+  margin: 0px; }
+
+.main {
+  position: relative; }
+
+.container {
+  float: right;
+  width: 700px;
+  background: rgba(185, 173, 173, 0.6);
+  margin: 265px auto;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px; }
+
+.booking-form {
+  padding: 35px 70px 51px 70px; }
+
+.header {
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  justify-content: space-between;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -o-justify-content: space-between;
+  -ms-justify-content: space-between;
+  padding: 50px 57px; }
+
+input {
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 13px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  display: block;
+  font-family: Poppins;
+  position: relative;
+  z-index: 9; }
+  input::-webkit-input-placeholder {
+    color: #999; }
+  input::-moz-placeholder {
+    color: #999; }
+  input:-ms-input-placeholder {
+    color: #999; }
+  input:-moz-placeholder {
+    color: #999; }
+
+.submit {
+  background: #f8ba0f;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 23px;
+  padding: 15px 20px;
+  cursor: pointer; }
+  .submit:hover {
+    background-color: #ce9906; }
+
+label {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 2px;
+  display: block; }
+
+
+.form-group {
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  justify-content: space-between;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -o-justify-content: space-between;
+  -ms-justify-content: space-between; }
+
+.form-get-recommendation {
+  float:right;
+  width: 140px; 
+  
+}
+
+
+.form-go-back-main{
+  float: right;
+  width: 140px; 
+  
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: calc( 100% - 30px);
+    max-width: 100%; }
+
+  .form-group {
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column; }
+}
+
+.start-rate-submit{
+  text-align: center;
+}
+
+
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; display:block; }
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+ border: none;
+ float: left;
+  }
+
+.rating > input { display: none; } 
+.rating > label:before { 
+ margin: 5px;
+ font-size: 1.25em;
+ font-family: FontAwesome;
+ display: inline-block;
+ content: "\f005";
+  }
+
+ .rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+   }
+
+   .rating > label { 
+    color: #ddd; 
+    float: right; 
+     }
+
+     /***** CSS Magic to Highlight Stars on Hover *****/
+
+    .rating > input:checked ~ label, /* show gold star when clicked */
+     .rating:not(:checked) > label:hover, /* hover current star */
+      .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } 
+       /*        hover previous stars in list */
+
+       .rating > input:checked + label:hover,
+       .rating > input:checked ~ label:hover,
+       .rating > label:hover ~ input:checked ~ label, 
+       .rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
