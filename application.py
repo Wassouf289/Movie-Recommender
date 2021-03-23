@@ -27,7 +27,7 @@ def get_recommendation():
     HOST = 'localhost'
     PORT = '5432'
     DBNAME = 'movies_db'
-    connection = f'postgres://{HOST}:{PORT}/{DBNAME}'
+    connection = f'postgresql://{HOST}:{PORT}/{DBNAME}'
     db = create_engine(connection)
 
     user_movies_ratings = request.args
