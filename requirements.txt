@@ -1,7 +1,6 @@
 pandas
 numpy
 scikit-learn==0.23
-sqlalchemy
 psycopg2
 pytest
 flask
