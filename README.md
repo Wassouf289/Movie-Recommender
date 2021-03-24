@@ -2,4 +2,13 @@
 ![Python application](https://github.com/Wassouf289/Movie-Recommender/workflows/Python%20application/badge.svg)
 
 
-[![License](https://poser.pugx.org/Wassouf289/Movie-Recommender/license.svg)](https://poser.pugx.org/Wassouf289/Movie-Recommender/license.svg)
+
+
+
+
+## License
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+
