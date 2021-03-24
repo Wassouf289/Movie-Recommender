@@ -16,7 +16,7 @@ movies_ratings = pd.merge(ratings,movies, how='outer', left_on='movieId', right_
 # add the year column
 movies_ratings['year'] = movies_ratings['title'].apply(get_year_from_title)
 # remove year from title
-movies_ratings['title'] = movies_ratings['title'].str.replace(r"\((\d{4})\)$", "")
+movies_ratings['title'] = movies_ratings['title'].str.replace(r"\((\d{4})\)$", "",regex=True)
 movies_ratings['title'] = movies_ratings['title'].str.strip()
 #Remove movies which have been rated
 movies_ratings.dropna(subset=['userId'], how='any',inplace=True)
