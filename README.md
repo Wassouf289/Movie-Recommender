@@ -5,7 +5,7 @@ movie recommender with a FLASK web interface, recommend movies to the user in tw
   - Non-negative matrix factorization
   - Collaborative Filtering: User-based Filtering recommendation
 
-
+<img src="static/images/main_page.png" >
 
 
 
