@@ -1,4 +1,5 @@
 # Movie-Recommender
 ![Python application](https://github.com/Wassouf289/Movie-Recommender/workflows/Python%20application/badge.svg)
 
-[![Build Status](https://travis-ci.com/Wassouf289/Movie-Recommender.svg?branch=master)](https://travis-ci.com/Wassouf289/Movie-Recommender)
+
+[![License](https://poser.pugx.org/Wassouf289/Movie-Recommender/license.svg)](https://poser.pugx.org/Wassouf289/Movie-Recommender/license.svg)
