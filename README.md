@@ -7,6 +7,15 @@ movie recommender with a FLASK web interface, recommend movies to the user in tw
 
 <img src="static/images/main_page.png" >
 
+the use has to input five movies and rate them:
+
+<img src="static/images/movies_rating.png" >
+
+and then the user gets his recommended movies:
+
+<img src="static/images/results.png" >
+
+
 
 
 ## License
