@@ -40,20 +40,19 @@ def get_recommendation():
     user_movies_fuzzed = []
     for movie in user_movies:
         # Search for the name of the movie in the database using tsvector
-        movie_name_query = f"""SELECT title,
+        title_search_query = f"""SELECT title,
                         ts_rank_cd(to_tsvector('english', movies_ratings.title), to_tsquery('''{movie}'':*'))
-                        AS score
-                        FROM movies_ratings
+                        AS score FROM movies_ratings
                         WHERE to_tsvector('english', movies_ratings.title) @@ to_tsquery('''{movie}'':*')
                         ORDER BY score DESC;"""
-        result = db.execute(movie_name_query).fetchall()[0][0]
-        user_movies_fuzzed.append(result)
+        movie_title = db.execute(title_search_query).fetchall()[0][0]
+        user_movies_fuzzed.append(movie_title)
     
-    print(user_movies_fuzzed)
+    #print(user_movies_fuzzed)
 
     # get user ratings for the movies: using list slicing
     user_ratings = user_movies_ratings_list[1::2]
-    print(user_ratings)
+    #print(user_ratings)
     movie_recommender = Movie_Recommender(user_movies_fuzzed,user_ratings)
     movies_ratings= movie_recommender.get_movies_ratings_data()
     user_movies_ids = movieTitle_to_id(user_movies_fuzzed,movies_ratings)
