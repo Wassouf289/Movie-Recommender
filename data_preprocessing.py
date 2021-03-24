@@ -21,12 +21,14 @@ movies_ratings['title'] = movies_ratings['title'].str.strip()
 #Remove movies which have been rated
 movies_ratings.dropna(subset=['userId'], how='any',inplace=True)
 
-# store in postqres
-HOST = 'localhost'
-PORT = '5432'
-DBNAME = 'movies_db'
-connection_string = f'postgresql://{HOST}:{PORT}/{DBNAME}'
-db = create_engine(connection_string)
-movies_ratings.to_sql('movies_ratings', db)
+
+if __name__ == '__main__':
+    # store in postqres
+    HOST = 'localhost'
+    PORT = '5432'
+    DBNAME = 'movies_db'
+    connection_string = f'postgresql://{HOST}:{PORT}/{DBNAME}'
+    db = create_engine(connection_string)
+    movies_ratings.to_sql('movies_ratings', db)
 
 
