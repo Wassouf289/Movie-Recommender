@@ -1,6 +1,6 @@
 pandas
 numpy
-sklearn
+sklearn >= 0.23
 sqlalchemy
 psycopg2
 pytest
