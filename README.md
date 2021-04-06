@@ -4,6 +4,7 @@
 A web-based movie recommender engine, recommends movies to the user in one of two algorithms:
   - Non-negative matrix factorization
   - Collaborative Filtering: User-based Filtering recommendation
+The dataset used is : MovieLens dataset https://grouplens.org/datasets/movielens/
 
 ### Usage:
 - clone the repository
