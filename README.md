@@ -8,11 +8,12 @@ A web-based movie recommender engine, recommends movies to the user in one of tw
 ### Usage:
 - clone the repository
 - login to your postgres and create a database called: movies_db
+
   so you should have the following connection:  connection = postgresql://localhost:5432/movies_db
  - run data_preprocessing.py , so the data is read from csv files, processed and stored in movies_db
  - you can choose in application.py between the two algorithms:
-  * recommended_movies = recommend_NMF()
-  * recommended_movies = user_based_filtering_recommend()
+    - recommended_movies = recommend_NMF()
+    - recommended_movies = user_based_filtering_recommend()
  - run application.py and go to your browser and type: localhost/5000
 
 <img src="static/images/main_page.png" >
