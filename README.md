@@ -9,6 +9,7 @@ The dataset used is : MovieLens dataset https://grouplens.org/datasets/movielens
 
 ### Usage:
 - clone the repository
+- install the requirements.
 - login to your postgres and create a database called: movies_db
 
   so you should have the following connection:  connection = postgresql://localhost:5432/movies_db
